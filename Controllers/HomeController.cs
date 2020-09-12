@@ -23,17 +23,23 @@ namespace LojaVirtual.Controllers
 
         public IActionResult ContatoAction()
         {
-            Contato contato = new Contato();
-            contato.Nome = HttpContext.Request.Form["nome"];
-            contato.Email = HttpContext.Request.Form["email"];
-            contato.Texto = HttpContext.Request.Form["texto"];
+            try
+            {
+                Contato contato = new Contato();
+                contato.Nome = HttpContext.Request.Form["nome"];
+                contato.Email = HttpContext.Request.Form["email"];
+                contato.Texto = HttpContext.Request.Form["texto"];
 
-            //ContatoEmail.EnviarContatoPorEmail(contato);
+                ContatoEmail.EnviarContatoPorEmail(contato);
 
-            ViewData["MSG_S"] = "Mensagem enviada com sucesso!";
+                ViewData["MSG_S"] = "Mensagem enviada com sucesso!";
+            }
+            catch
+            {
+                ViewData["MSG_E"] = "Opps - Tivemos um erro! Tente novamente mais tarde.";
+            }
 
             return View("Contato");
-
         }
 
         public IActionResult Login()
