@@ -109,3 +109,5 @@ C:\work\aspnet\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml
 C:\work\aspnet\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\work\aspnet\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Views\Home\CadastroCliente.cshtml.g.cs
 C:\work\aspnet\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Views\Home\CarrinhoCompras.cshtml.g.cs
+C:\work\aspnet\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.Libraries.Lang.Mensagem.resources
+C:\work\aspnet\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csproj.GenerateResource.cache
